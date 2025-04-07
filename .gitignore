@@ -1,0 +1,59 @@
+# Diretórios de dependências
+node_modules/
+bower_components/
+
+# Diretórios de build/output
+dist/
+build/
+public/build/
+public/js/
+public/css/
+js/
+css/
+
+# Arquivos de mapas de código
+*.map
+
+# Cache do sistema
+.DS_Store
+Thumbs.db
+
+# Cache de ferramentas
+.cache/
+.vite/
+.sass-cache/
+.next/
+.nuxt/
+out/
+
+# Arquivos temporários
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+
+# Arquivos do sistema
+*.swp
+*.swo
+*.bak
+
+# Ambiente e configurações locais
+.env
+.env.*.local
+.vscode/
+.idea/
+*.code-workspace
+
+# Gulp output
+gulpfile.js.LICENSE.txt
+
+# Arquivos de lock alternativos (se usar só um, comente os outros)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Arquivos específicos de testes
+coverage/
