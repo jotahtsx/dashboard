@@ -13209,3 +13209,42 @@ body {
   transform: scale(1.1);
   /* Efeito de zoom na imagem do usuário */
 }
+
+.notifications-dropdown {
+  min-width: 300px;
+}
+
+.not-drop {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.user-drop {
+  width: 37px; 
+  height: 37px; 
+  object-fit: cover; 
+  border: 2px solid #fff;
+}
+
+.badge-notification {
+  font-size: 0.7rem;
+  padding: 0.2em 0.45em;
+  color: white;
+  line-height: 1.2;
+}
+
+.animate-fade {
+  animation: fadeBlink 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeBlink {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.not-icon {
+  font-size: 1.85rem;
+}
