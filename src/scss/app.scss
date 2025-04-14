@@ -13248,3 +13248,107 @@ body {
 .not-icon {
   font-size: 1.85rem;
 }
+
+
+.notifications-dropdown {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  background-color: #ffffff !important; /* Branco puro, com !important */
+  width: 350px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notifications-dropdown .dropdown-header {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #555;
+  border-bottom: 1px solid #eee;
+  text-transform: uppercase;
+}
+
+.notifications-dropdown .notification-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.notifications-dropdown .notification-item:last-child {
+  border-bottom: none;
+}
+
+.notifications-dropdown .notification-item:hover {
+  background-color: #f0f0f0;
+}
+
+.notifications-dropdown .notification-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.notifications-dropdown .notification-icon i {
+  font-size: 1.2rem; /* Ajuste o tamanho do ícone */
+  color: #333; /* Cor do ícone */
+}
+
+.notifications-dropdown .notification-title {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.notifications-dropdown .notification-link {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.notifications-dropdown .notification-button {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 0.75rem 1rem;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Botão de urgência */
+.notifications-dropdown .urgent-button {
+  background-color: #FF9800 ; /* Laranja para urgência */
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+table.datatable td {
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+table.datatable th {
+  text-align: center;
+  /* Alinha o texto horizontalmente ao centro */
+  vertical-align: middle;
+  /* Alinha o conteúdo verticalmente ao centro */
+}
+
+table.datatable th {
+  text-align: center !important;
+  /* Alinha o texto horizontalmente ao centro */
+  /* Remova ou comente a linha abaixo se você não quer alinhamento vertical: */
+  /* vertical-align: middle; */
+}
