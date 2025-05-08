@@ -103,6 +103,15 @@ hr {
   opacity: 0.25;
 }
 
+ul, ol {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 h6,
 .h6,
 h5,
@@ -13218,14 +13227,14 @@ body {
   width: 37px;
   height: 37px;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
 .user-drop {
-  width: 37px; 
-  height: 37px; 
-  object-fit: cover; 
+  width: 37px;
+  height: 37px;
+  object-fit: cover;
   border: 2px solid #fff;
 }
 
@@ -13241,8 +13250,15 @@ body {
 }
 
 @keyframes fadeBlink {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 .not-icon {
@@ -13255,7 +13271,8 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 0;
   font-size: 0.9rem;
-  background-color: #ffffff !important; /* Branco puro, com !important */
+  background-color: #ffffff !important;
+  /* Branco puro, com !important */
   width: 350px;
   max-height: 400px;
   overflow-y: auto;
@@ -13296,8 +13313,10 @@ body {
 }
 
 .notifications-dropdown .notification-icon i {
-  font-size: 1.2rem; /* Ajuste o tamanho do ícone */
-  color: #333; /* Cor do ícone */
+  font-size: 1.2rem;
+  /* Ajuste o tamanho do ícone */
+  color: #333;
+  /* Cor do ícone */
 }
 
 .notifications-dropdown .notification-title {
@@ -13325,11 +13344,27 @@ body {
 
 /* Botão de urgência */
 .notifications-dropdown .urgent-button {
-  background-color: #FF9800 ; /* Laranja para urgência */
+  background-color: #FF9800;
+  /* Laranja para urgência */
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.button-create {
+  background-color: #2ECC71;
+  color: white;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 table.datatable td {
@@ -13341,14 +13376,110 @@ table.datatable td {
 
 table.datatable th {
   text-align: center;
-  /* Alinha o texto horizontalmente ao centro */
   vertical-align: middle;
-  /* Alinha o conteúdo verticalmente ao centro */
 }
 
 table.datatable th {
   text-align: center !important;
-  /* Alinha o texto horizontalmente ao centro */
-  /* Remova ou comente a linha abaixo se você não quer alinhamento vertical: */
-  /* vertical-align: middle; */
 }
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-button {
+  color: #666;
+}
+
+
+.auth {
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);
+  background: linear-gradient(to top, #4A00E0, #8E2DE2);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth .auth-logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.auth .login-box {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 375px;
+}
+
+.auth .login-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth .login-box .error-box ul {
+  margin-bottom: 0;
+}
+
+.auth .form-group {
+  margin-bottom: 15px;
+}
+
+.auth .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.auth .form-group input[type="email"],
+.auth .form-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+}
+
+.auth .error-box {
+  background: #ffe0e0;
+  color: #900;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.auth button {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  background: #555;
+  color: #fff ! Important;
+  text-decoration: none ! Important;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background-color: #3AADD9;
+  text-transform: uppercase;
+
+}
+
+.auth button:hover {
+  background: #005fa3;
+}
+
