@@ -2052,7 +2052,7 @@ progress {
   width: 100%;
   margin-bottom: 1rem;
   color: var(--bs-table-color);
-  vertical-align: top;
+  vertical-align: middle;
   border-color: var(--bs-table-border-color);
 }
 
@@ -6975,6 +6975,11 @@ fieldset:disabled .btn {
   vertical-align: var(--bs-spinner-vertical-align);
   border-radius: 50%;
   animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
+}
+
+.datatable-table>tbody>tr>td, .datatable-table>tbody>tr>th, .datatable-table>tfoot>tr>td, .datatable-table>tfoot>tr>th, .datatable-table>thead>tr>td, .datatable-table>thead>tr>th {
+    vertical-align: middle;
+    padding: 8px 10px !important;
 }
 
 @keyframes spinner-border {
@@ -13095,7 +13100,7 @@ body {
 .datatable-table>tfoot>tr>th,
 .datatable-table>thead>tr>td,
 .datatable-table>thead>tr>th {
-  vertical-align: top;
+  vertical-align: center;
   padding: 0.5rem 0.5rem;
 }
 
