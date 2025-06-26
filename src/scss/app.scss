@@ -220,7 +220,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 ol ol,
@@ -5368,7 +5368,7 @@ fieldset:disabled .btn {
 
 .badge {
   --bs-badge-padding-x: 0.65em;
-  --bs-badge-padding-y: 0.35em;
+  --bs-badge-padding-y: 0.45em;
   --bs-badge-font-size: 0.75em;
   --bs-badge-font-weight: 700;
   --bs-badge-color: #fff;
@@ -13488,3 +13488,18 @@ table.datatable th {
   background: #005fa3;
 }
 
+.address-readonly-styled {
+    background-color: #e9ecef;
+    opacity: 0.8;
+    cursor: not-allowed;
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: #ced4da;
+    }
+
+    &.form-control:focus:read-only {
+        border-color: #ced4da;
+    }
+}
